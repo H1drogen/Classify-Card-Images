@@ -1,4 +1,5 @@
 import torch
+from torchvision.transforms import transforms
 
 from models.playing_card_dataset import PlayingCardDataset
 
@@ -9,5 +10,11 @@ print(tensor1 + tensor2)
 
 print(torch.cuda.is_available())
 
-dataset = PlayingCardDataset('./dataset', transform=None)
+# model will expect a consistent 224x224 image
+transform = transforms.Compose([
+    transforms.Resize((128, 128)),
+    transforms.ToTensor()
+])
+
+dataset = PlayingCardDataset('./dataset', transform)
 print(len(dataset))
