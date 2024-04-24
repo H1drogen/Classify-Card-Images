@@ -16,5 +16,13 @@ transform = transforms.Compose([
     transforms.ToTensor()
 ])
 
+# create a dataset
 dataset = PlayingCardDataset('./dataset', transform)
 print(len(dataset))
+
+# get the first item
+image, label = dataset[0]
+
+# create a dataloader, which will handle batching and shuffling. batching is the process of combining multiple samples and shuffling is the process of randomizing the order of the samples. shuffling is done when training a model to prevent the model from learning the order of the samples.
+dataloader = torch.utils.data.DataLoader(dataset, batch_size=32, shuffle=True)
+
