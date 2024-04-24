@@ -1,0 +1,5 @@
+dataset/archive/test/*
+dataset/archive/train/*
+dataset/archive/valid/*
+dataset/archive/14card types-14-(200 X 200)-94.61.h5
+dataset/archive/53cards-53-(200 X 200)-100.00.h5
