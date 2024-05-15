@@ -18,9 +18,9 @@ transform = transforms.Compose([
 ])
 
 
-train_folder = './dataset/train'
-validation_folder = './dataset/valid'
-test_folder = './dataset/test'
+train_folder = './dataset/archive/train'
+validation_folder = './dataset/archive/valid'
+test_folder = './dataset/archive/test'
 
 # create datasets
 dataset = PlayingCardDataset('./dataset', transform)
@@ -35,8 +35,8 @@ image, label = dataset[0]
 # Dataloader will handle batching and shuffling. batching is the process of combining multiple samples and shuffling is the process of randomizing the order of the samples. shuffling is done when training a model to prevent the model from learning the order of the samples.
 dataloader = torch.utils.data.DataLoader(dataset, batch_size=32, shuffle=True)
 train_dataloader = torch.utils.data.DataLoader(train_dataset, batch_size=32, shuffle=True)
-validation_dataloader = torch.utils.data.DataLoader(validation_dataset, batch_size=32, shuffle=True)
-test_dataloader = torch.utils.data.DataLoader(test_dataset, batch_size=32, shuffle=True)
+validation_dataloader = torch.utils.data.DataLoader(validation_dataset, batch_size=32, shuffle=False)
+test_dataloader = torch.utils.data.DataLoader(test_dataset, batch_size=32, shuffle=False)
 
 model = SimpleCardClassifier()
 

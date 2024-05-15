@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65a7564c-381d-4f13-b182-01218afd4136" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/training_loop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_loop.py" beforeDir="false" afterPath="$PROJECT_DIR$/training_loop.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +35,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.create_model.executor": "Debug",
     "Python.main.executor": "Debug",
+    "Python.training_loop.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
@@ -64,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715806883456</updated>
-      <workItem from="1715806886309" duration="1850000" />
+      <workItem from="1715806886309" duration="2522000" />
     </task>
     <servers />
   </component>
@@ -73,5 +75,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PyTorch_Project$main.coverage" NAME="main Coverage Results" MODIFIED="1715808200033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PyTorch_Project$training_loop.coverage" NAME="training_loop Coverage Results" MODIFIED="1715809474707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PyTorch_Project$create_model.coverage" NAME="create_model Coverage Results" MODIFIED="1715809398049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
