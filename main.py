@@ -1,6 +1,7 @@
 import torch
 from torchvision.transforms import transforms
 
+from models.card_classifier import SimpleCardClassifier
 from models.playing_card_dataset import PlayingCardDataset
 
 tensor1 = torch.tensor([1.0, 2.0, 3.0])
@@ -25,4 +26,12 @@ image, label = dataset[0]
 
 # create a dataloader, which will handle batching and shuffling. batching is the process of combining multiple samples and shuffling is the process of randomizing the order of the samples. shuffling is done when training a model to prevent the model from learning the order of the samples.
 dataloader = torch.utils.data.DataLoader(dataset, batch_size=32, shuffle=True)
+
+model = SimpleCardClassifier()
+
+# check the structure of the model accepts the input data, which is a 3x224x224 image. Returns [batch_size, num_classes] tensor with .shape
+print(model(image).shape)
+
+
+
 

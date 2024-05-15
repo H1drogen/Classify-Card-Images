@@ -12,8 +12,10 @@ class SimpleCardClassifier(nn.Module):
         self.fc1 = nn.Linear(64 * 16 * 16, 512)
         self.fc2 = nn.Linear(512, 52)
 
+
+
     def forward(self, x):
-        # connect these parts together
+        # Connect these parts together and return the output
         x = self.pool(nn.functional.relu(self.conv1(x)))
         x = self.pool(nn.functional.relu(self.conv2(x)))
         x = self.pool(nn.functional.relu(self.conv3(x)))
