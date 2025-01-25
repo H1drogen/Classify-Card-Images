@@ -23,7 +23,7 @@ validation_folder = './dataset/archive/valid'
 test_folder = './dataset/archive/test'
 
 # create datasets
-dataset = PlayingCardDataset('./dataset', transform)
+dataset = PlayingCardDataset('../dataset', transform)
 train_dataset = PlayingCardDataset(train_folder, transform)
 validation_dataset = PlayingCardDataset(validation_folder, transform)
 test_dataset = PlayingCardDataset(test_folder, transform)

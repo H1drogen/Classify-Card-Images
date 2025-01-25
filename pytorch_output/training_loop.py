@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 
-from create_model import model, train_dataloader, validation_dataloader
+from pytorch_output.create_model import model, train_dataloader, validation_dataloader
 
 # Loss function
 criterion = nn.CrossEntropyLoss()
