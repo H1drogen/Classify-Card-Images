@@ -18,9 +18,9 @@ transform = transforms.Compose([
 ])
 
 
-train_folder = './dataset/archive/train'
-validation_folder = './dataset/archive/valid'
-test_folder = './dataset/archive/test'
+train_folder = '.././dataset/archive/train'
+validation_folder = '.././dataset/archive/valid'
+test_folder = '.././dataset/archive/test'
 
 # create datasets
 dataset = PlayingCardDataset('../dataset', transform)
